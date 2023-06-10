@@ -11,7 +11,9 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(bufnr) end)
+        require("astronvim.utils.status").heirline.buffer_picker(
+          function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
+        )
       end,
       desc = "Pick to close",
     },
@@ -20,6 +22,15 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- switch buffers
+    ["<S-h>"] = {
+      function() require("astronvim.utils.buffer").nav(-1) end,
+    },
+
+    ["<S-l>"] = {
+      function() require("astronvim.utils.buffer").nav(1) end,
+    },
   },
   t = {
     -- setting a mapping to false will disable it
@@ -27,10 +38,10 @@ return {
   },
 
   i = {
-    -- setting movements in insert mode 
-    ["<A-h>"] = {"<left>"},
-    ["<A-j>"] = {"<down>"},
-    ["<A-k>"] = {"<up>"},
-    ["<A-l>"] = {"<right>"},
-  }
+    -- setting movements in insert mode
+    ["<A-h>"] = { "<left>" },
+    ["<A-j>"] = { "<down>" },
+    ["<A-k>"] = { "<up>" },
+    ["<A-l>"] = { "<right>" },
+  },
 }
