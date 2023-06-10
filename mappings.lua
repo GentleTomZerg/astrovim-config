@@ -25,4 +25,12 @@ return {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
+
+  i = {
+    -- setting movements in insert mode 
+    ["<A-h>"] = {"<left>"},
+    ["<A-j>"] = {"<down>"},
+    ["<A-k>"] = {"<up>"},
+    ["<A-l>"] = {"<right>"},
+  }
 }
