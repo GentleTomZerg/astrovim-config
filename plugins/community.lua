@@ -6,6 +6,34 @@ return {
 
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
-  {import = "astrocommunity.pack.java"},
-  {import = "astrocommunity.pack.lua"},
+  --
+  --
+  --
+  -- Language Packs
+  { import = "astrocommunity.pack.java" },
+  { import = "astrocommunity.pack.lua" },
+
+  -- scrolling
+  { import = "astrocommunity.scrolling.cinnamon-nvim" },
+
+  -- treesitter
+  -- colorful parenthesis
+  { import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
+
+  -- motions
+  { import = "astrocommunity.motion.mini-surround" },
+  { import = "astrocommunity.motion.leap-nvim" },
+
+  -- utility
+  -- graphic command line in neovim
+  { import = "astrocommunity.utility.noice-nvim" },
+
+  -- colorscheme
+  { import = "astrocommunity.colorscheme.catppuccin" },
+  {
+    "catppuccin",
+    opts = {
+      flavour = "mocha",
+    },
+  },
 }
