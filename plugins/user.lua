@@ -7,6 +7,8 @@ return {
   --   event = "BufRead",
   --   config = function() require("lsp_signature").setup() end,
   -- },
+
+  -- Todo Plugin
   {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
