@@ -43,5 +43,8 @@ return {
     ["<A-j>"] = { "<down>" },
     ["<A-k>"] = { "<up>" },
     ["<A-l>"] = { "<right>" },
+
+    -- For my small keyboard, which put ` and ~ together with esc key
+    ["<A-esc>"] = { "``<left>" },
   },
 }

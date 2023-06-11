@@ -11,6 +11,14 @@ return {
   --
   -- Language Packs
   { import = "astrocommunity.pack.java" },
+  {
+    "nvim-jdtls",
+    keys = {
+      { "<leader>df", "<cmd> lua require'jdtls'.test_class() <cr>",          desc = "Test all" },
+      { "<leader>dn", "<cmd> lua require'jdtls'.test_nearest_method() <cr>", desc = "Test method" },
+    },
+  },
+
   { import = "astrocommunity.pack.lua" },
 
   -- scrolling
@@ -36,4 +44,15 @@ return {
       flavour = "mocha",
     },
   },
+
+  -- project manager
+  { import = "astrocommunity.project.project-nvim" },
+  {
+    "project.nvim",
+    keys = {
+      { "<leader>fp", "<cmd> Telescope projects<cr>" },
+    },
+  },
+
+  -- TODO: customize sublines
 }
