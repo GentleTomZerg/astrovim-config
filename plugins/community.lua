@@ -50,9 +50,10 @@ return {
   {
     "project.nvim",
     keys = {
-      { "<leader>fp", "<cmd> Telescope projects<cr>" },
+      { "<leader>fp", "<cmd> Telescope projects<cr>", desc = "Find projects" },
     },
   },
 
-  -- TODO: customize sublines
+  -- change status line
+  { import = "astrocommunity.bars-and-lines.heirline-mode-text-statusline" },
 }
