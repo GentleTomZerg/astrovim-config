@@ -37,21 +37,21 @@ return {
       opts.statusline = {
         hl = { fg = "fg", bg = "bg" },
         status.component.mode { mode_text = { padding = { left = 1, right = 1 } } }, -- add the mode text
-        status.component.git_branch { surround = { separator = "none_left" } },
+        status.component.git_branch { surround = { separator = "left" } },
         status.component.file_info {
-          surround = { separator = "none_left" },
+          surround = { separator = "left" },
           filetype = {},
           filename = false,
           file_modified = false,
         },
-        status.component.git_diff { surround = { separator = "none_left" } },
-        status.component.diagnostics { surround = { separator = "none_left" } },
+        status.component.git_diff { surround = { separator = "left" } },
+        status.component.diagnostics { surround = { separator = "left" } },
         status.component.fill(),
         status.component.cmd_info(),
         status.component.fill(),
-        status.component.lsp { surround = { separator = "none_right" } },
-        status.component.treesitter { surround = { separator = "none_right" } },
-        status.component.nav { surround = { separator = "none_right" } },
+        status.component.lsp { surround = { separator = "right" } },
+        status.component.treesitter { surround = { separator = "right" } },
+        status.component.nav { surround = { separator = "right" } },
       }
       return opts
     end,
