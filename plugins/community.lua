@@ -21,9 +21,6 @@ return {
 
   { import = "astrocommunity.pack.lua" },
 
-  -- scrolling
-  -- { import = "astrocommunity.scrolling.cinnamon-nvim" },
-
   -- treesitter
   -- colorful parenthesis
   { import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
@@ -37,11 +34,19 @@ return {
   { import = "astrocommunity.utility.noice-nvim" },
 
   -- colorscheme
+  -- the customization of nvim-notify should not be altered
+  {
+    "rcarriga/nvim-notify",
+    opts = {
+      background_colour = "#00",
+    },
+  },
   { import = "astrocommunity.colorscheme.catppuccin" },
   {
     "catppuccin",
     opts = {
       flavour = "mocha",
+      transparent_background = true,
     },
   },
 
