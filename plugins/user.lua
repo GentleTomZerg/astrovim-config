@@ -51,7 +51,7 @@ return {
         status.component.fill(),
         status.component.lsp { surround = { separator = "right" } },
         status.component.treesitter { surround = { separator = "right" } },
-        status.component.nav { surround = { separator = "right" } },
+        status.component.nav { scrollbar = false, surround = { separator = "right" } },
       }
       return opts
     end,
