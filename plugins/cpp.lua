@@ -78,7 +78,6 @@ return {
     },
   },
 
-  -- TODO: config nvim-dap for c/cpp
   {
     "jay-babu/mason-nvim-dap.nvim",
     opts = {
