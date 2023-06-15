@@ -1,0 +1,7 @@
+{
+  "setup": {
+    "prefix": ["author"],
+    "body": ["// Author: Tom", "// Date: $(date)"],
+    "description": "Author Info"
+  }
+}
