@@ -53,9 +53,13 @@ return {
   -- TODO: customize neo-tree to follow the buffers
   {
     "nvim-neo-tree/neo-tree.nvim",
-    config = {
+    opts = {
       filesystem = {
+        bind_to_cwd = false,
         follow_current_file = true,
+        filtered_items = {
+          -- hide_dotfiles = false,
+        },
       },
     },
   },

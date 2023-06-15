@@ -45,12 +45,20 @@ return {
       background_colour = "#00",
     },
   },
+  -- { import = "astrocommunity.colorscheme.tokyonight-nvim" },
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   opts = {
+  --     style = "storm",
+  --     transparent = true,
+  --   },
+  -- },
   { import = "astrocommunity.colorscheme.catppuccin" },
   {
     "catppuccin",
     opts = {
       flavour = "mocha",
-      -- transparent_background = true,
+      transparent_background = true,
     },
   },
 

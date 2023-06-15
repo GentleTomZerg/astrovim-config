@@ -1,4 +1,7 @@
 return {
   left = { "", " " },
-  right = { " ", "" },
+  right = { " ", " " },
+  none = { "", "" },
+  -- left_other = { "", "" },
+  -- right_other = { "", "" },
 }
