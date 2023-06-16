@@ -26,7 +26,7 @@ return {
   {
     "jay-babu/mason-null-ls.nvim",
     opts = function(_, opts)
-      opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, { "clang_format" })
+      opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, { "clang_format", "cpplint" })
     end,
   },
 
@@ -50,6 +50,7 @@ return {
       --     capabilities = { offsetEncoding = "utf-8" },
       --   },
       -- },
+      -- TODO: cpplint and clang-format not compatible
 
       handlers = {
         clangd = function(_, _)
