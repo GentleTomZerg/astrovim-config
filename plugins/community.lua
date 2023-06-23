@@ -24,13 +24,15 @@ return {
   { import = "astrocommunity.pack.markdown" },
 
   { import = "astrocommunity.pack.cmake" },
+  { import = "astrocommunity.pack.cpp" },
 
   -- treesitter
   -- colorful parenthesis
   { import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
 
   -- motions
-  { import = "astrocommunity.motion.mini-surround" },
+  -- { import = "astrocommunity.motion.mini-surround" },
+  { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.motion.leap-nvim" },
 
   -- utility
