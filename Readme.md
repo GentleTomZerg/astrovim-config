@@ -2,6 +2,7 @@
 
 - [How to override installed plugins?](#how-to-override-installed-plugins)
 - [Using AstroNvim to develop C/C++](#using-astronvim-to-develop-cc)
+- [Python Pack Problem](#python-pack-problem)
 <!--toc:end-->
 
 # How to override installed plugins?
@@ -69,3 +70,10 @@
 Using `clang-format -style=google -dump-config > .clang-format` to generate a google style format configuration.
 
 - linter: cpplint
+
+# Python Pack Problem
+
+- Now `Astronvim Community` has provided a lot of develop packs for different languages.
+- The python pack debug has a problem. Its config can automatically install the debugpy with mason, however, when we try to debug a python project, `usr/bin/python` can not find debugpy since debugpy is a venv stored under mason directory.
+
+- Now, the solution is to install debugpy for `usr/bin/python`.
