@@ -14,7 +14,7 @@ return {
   {
     "nvim-jdtls",
     keys = {
-      { "<leader>df", "<cmd> lua require'jdtls'.test_class() <cr>",          desc = "Test all" },
+      { "<leader>df", "<cmd> lua require'jdtls'.test_class() <cr>", desc = "Test all" },
       { "<leader>dn", "<cmd> lua require'jdtls'.test_nearest_method() <cr>", desc = "Test method" },
     },
   },
@@ -23,13 +23,10 @@ return {
 
   { import = "astrocommunity.pack.markdown" },
 
-  { import = "astrocommunity.pack.cmake" },
+  -- { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.python" },
-  { import = "astrocommunity.pack.bash" },
-
-  -- Markdown
-  -- { import = "astrocommunity.markdown-and-latex.peek-nvim" },
+  -- { import = "astrocommunity.pack.bash" },
 
   -- treesitter
   -- colorful parenthesis
@@ -38,7 +35,8 @@ return {
   -- motions
   { import = "astrocommunity.motion.mini-surround" },
   -- { import = "astrocommunity.motion.nvim-surround" },
-  { import = "astrocommunity.motion.leap-nvim" },
+  -- { import = "astrocommunity.motion.leap-nvim" },
+  { import = "astrocommunity.motion.flash-nvim" },
 
   -- utility
   -- graphic command line in neovim
@@ -80,4 +78,10 @@ return {
 
   -- status line and winbar
   { import = "astrocommunity.bars-and-lines.heirline-vscode-winbar" },
+
+  -- lsp plugin
+  { import = "astrocommunity.lsp.lsp-inlayhints-nvim" },
+
+  -- code runner
+  { import = "astrocommunity.code-runner.compiler-nvim" },
 }
