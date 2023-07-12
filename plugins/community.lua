@@ -23,19 +23,15 @@ return {
 
   { import = "astrocommunity.pack.markdown" },
 
-  -- { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.python" },
-  -- { import = "astrocommunity.pack.bash" },
 
   -- treesitter
   -- colorful parenthesis
-  { import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
+  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
 
   -- motions
   { import = "astrocommunity.motion.mini-surround" },
-  -- { import = "astrocommunity.motion.nvim-surround" },
-  -- { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
 
   -- utility
@@ -70,7 +66,7 @@ return {
   -- project manager
   { import = "astrocommunity.project.project-nvim" },
   {
-    "project.nvim",
+    "jay-babu/project.nvim",
     keys = {
       { "<leader>fp", "<cmd> Telescope projects<cr>", desc = "Find projects" },
     },
@@ -84,4 +80,10 @@ return {
 
   -- code runner
   { import = "astrocommunity.code-runner.compiler-nvim" },
+
+  -- debug
+  { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
+
+  -- diagnostic
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
 }
