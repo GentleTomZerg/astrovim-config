@@ -24,7 +24,7 @@ return {
   { import = "astrocommunity.pack.markdown" },
 
   { import = "astrocommunity.pack.cpp" },
-  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.html-css" },
 
   -- treesitter
   -- colorful parenthesis
@@ -78,12 +78,12 @@ return {
   -- lsp plugin
   { import = "astrocommunity.lsp.lsp-inlayhints-nvim" },
 
-  -- code runner
-  { import = "astrocommunity.code-runner.compiler-nvim" },
-
   -- debug
   { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
 
   -- diagnostic
   { import = "astrocommunity.diagnostics.trouble-nvim" },
+
+  -- markdown and latex
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
 }

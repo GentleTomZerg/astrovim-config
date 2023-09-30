@@ -28,13 +28,4 @@ return {
       { "<leader>fq", "<cmd>TodoTelescope<cr>", desc = "Find TODO" },
     },
   },
-
-  -- Markdown-preview
-  {
-    "iamcco/Markdown-preview.nvim",
-    build = "cd app && npm install",
-    init = function() vim.g.mkdp_filetypes = { "markdown" } end,
-    ft = { "markdown" },
-    cmd = { "MarkdownPreview" },
-  },
 }
