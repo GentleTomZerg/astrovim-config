@@ -4,11 +4,6 @@ return {
   -- example of imporing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
-  -- { import = "astrocommunity.colorscheme.catppuccin" },
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
-  --
-  --
-  --
   -- Language Packs
   { import = "astrocommunity.pack.java" },
   {
@@ -46,20 +41,12 @@ return {
       background_colour = "#00",
     },
   },
-  -- { import = "astrocommunity.colorscheme.tokyonight-nvim" },
-  -- {
-  --   "folke/tokyonight.nvim",
-  --   opts = {
-  --     style = "storm",
-  --     transparent = true,
-  --   },
-  -- },
   { import = "astrocommunity.colorscheme.catppuccin" },
   {
     "catppuccin",
     opts = {
       flavour = "mocha",
-      transparent_background = true,
+      -- transparent_background = true,
     },
   },
 
